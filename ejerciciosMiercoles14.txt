@@ -1,0 +1,18 @@
+Ejercico miercoles:
+Crear un componente que gestione una lista de contactos el usuario debe de poder agregar
+eliminar contactos. Para ello los requisitos son:
+  - Crear un interfaz llamada contacto con el id, nombre, tlf y email.
+  - El componente debe de tener un form con 3 inputs (nombre, tlf y email.), un botón 
+    para agregar el contacto, una lista para ver contactos y un botón para eliminar el
+    contacto
+  - Las funcionalidades deben de ser: agregar un nuevo contacto (generar id automatico
+    con alguna libreria npm), eliminar un contacto por su id, limpiar el formulario
+    después de agregar, mostrar un mensaje si no hay contactos almacenados.
+
+Crear un formulario de login con validación básica con dos campos: email y password.
+  - Hay que validar que los campos no estén vacíos
+  - Hay que validar con alguna expresión regular (chatgpt) que el formato del email sea
+    válido
+  - Hay que mostrar/ocultar la contraseña con un guioncito
+  - Hay que mostrar mensajes de error personalizados
+  - Que la contraseña tenga un mínimo de caracteres
