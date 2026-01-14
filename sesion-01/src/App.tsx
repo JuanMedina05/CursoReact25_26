@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Saludo from './components/Saludo'
 import Tarjeta from './components/Tarjeta'
 import ForumalrioUsuario from './components/ForumalrioUsuario'
+import FormularioLogin from './components/FormularioLogin'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
         image=""
       />
       <ForumalrioUsuario/>
+      <FormularioLogin/>
     </>
   )
 }
