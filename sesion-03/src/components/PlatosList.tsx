@@ -1,10 +1,17 @@
-import React from 'react'
+import { use } from 'react'
+import type { Plato } from '../types/lomo'
 import PlatoCard from './PlatoCard'
 
-const PlatosList = () => {
+interface PlatosListProps{
+  platosPromise:Promise<Plato[]>
+}
+const PlatosList = ({platosPromise}:PlatosListProps) => {
+  const platos = use(platosPromise)
   return (
-    <div>
-      <PlatoCard plato={plato}/>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {platos.map((plato:Plato)=>(
+        <PlatoCard key={plato.id} plato={plato}/>
+      ))}
     </div>
   )
 }
