@@ -1,5 +1,4 @@
-import type { Plato } from '../utils/api'
-import { API_CONFIG } from '../types/lomo'
+import { API_CONFIG, type Plato } from '../types/lomo'
 
 interface PlatoCardProps {
     plato:Plato

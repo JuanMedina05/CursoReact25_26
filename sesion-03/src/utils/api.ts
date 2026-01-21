@@ -1,15 +1,7 @@
-import { API_CONFIG } from "../types/lomo";
+import { API_CONFIG, type Plato } from "../types/lomo";
 
 // api hace fetchin a mi api para traer todos los platos
-export interface Plato{
-    id: number;
-    nombre: string;
-    categoria: string;
-    origen: string;
-    calorias: number;
-    ingredientes: string[];
-    imagen: string;
-}
+
 export const fetchPlatos = async ():Promise<Plato[]> => {
     const url=`${API_CONFIG.BASE_URL}${API_CONFIG.PLATOS_ENDPOINT}`;
     try{
